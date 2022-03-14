@@ -159,7 +159,7 @@ namespace Luauth_Winform_App_V2 {
             var httpWebRequest = (HttpWebRequest)WebRequest.Create(url);
             httpWebRequest.ContentType = "application/json";
             httpWebRequest.Method = method;
-            httpWebRequest.ContentLength = body.Length;
+            // httpWebRequest.ContentLength = body.Length;
             if (auth != "") {
                 httpWebRequest.Headers.Add("Authorization", auth);
             }
